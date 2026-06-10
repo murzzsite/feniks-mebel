@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Феникс — мебель под заказ в Новосибирске</title>
+  <meta name="description" content="Производим корпусную мебель под заказ: кухни, гостиные, прихожие, детские, ванные, офисная мебель. Новосибирск и Сибирь.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">
+      <img src="logo.jpg" alt="Феникс" class="logo__img">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#types">Мебель</a>
+      <a href="#how">Как работаем</a>
+      <a href="#why">Преимущества</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="nav__cta">Записаться на встречу</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <div class="hero__badge">Новосибирск · собственное производство</div>
+      <h1 class="hero__title">Мебель, которая<br>создана для вашего дома</h1>
+      <p class="hero__sub">Проектируем и производим корпусную мебель под заказ — кухни, гостиные, прихожие, детские, ванные, офис. Каждый проект — под ваши размеры и вкус.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Записаться на встречу</a>
+        <a href="https://vk.com/fenixmebel54" target="_blank" rel="noopener" class="btn btn--ghost">Наши работы в VK</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>15+</strong>
+          <span>лет на рынке</span>
+        </div>
+        <div class="hero__stat">
+          <strong>5 000+</strong>
+          <span>проектов выполнено</span>
+        </div>
+        <div class="hero__stat">
+          <strong>500 км</strong>
+          <span>радиус выезда замерщика</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual reveal">
+      <div class="hero__card">
+        <div class="hero__card-label">Средний проект под ключ</div>
+        <div class="hero__card-price">от 150 000 ₽</div>
+        <ul class="hero__card-list">
+          <li>Дизайн-проект бесплатно</li>
+          <li>Выезд замерщика после договора</li>
+          <li>Гарантия на всю мебель</li>
+          <li>Монтаж включён</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--full">Получить расчёт стоимости</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="types" id="types">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Что мы производим</h2>
+      <p>Любая корпусная мебель — по вашим размерам, в нужный срок</p>
+    </div>
+    <div class="types__grid">
+      <div class="type-card reveal">
+        <div class="type-card__icon">🍳</div>
+        <h3>Кухни</h3>
+        <p>Угловые, прямые, П-образные — любой планировки. Встроенная техника, фасады на выбор.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">🛋️</div>
+        <h3>Гостиные</h3>
+        <p>Стенки, тумбы, стеллажи, тv-зоны. Вписываем в любой стиль интерьера.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">🚪</div>
+        <h3>Прихожие</h3>
+        <p>Шкафы-купе, вешалки, тумбы для обуви. Максимум хранения на минимуме площади.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">🧒</div>
+        <h3>Детские</h3>
+        <p>Кровати-чердаки, рабочие зоны, шкафы. Безопасные материалы, сертифицированные фурнитура.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">🛁</div>
+        <h3>Ванные и туалет</h3>
+        <p>Тумбы, пеналы, зеркала с полками. Влагостойкие материалы и покрытия.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">💼</div>
+        <h3>Офисная мебель</h3>
+        <p>Рабочие столы, шкафы, переговорные зоны. Корпоративные заказы любого объёма.</p>
+      </div>
+      <div class="type-card reveal">
+        <div class="type-card__icon">🚿</div>
+        <h3>Шкафы и гардеробные</h3>
+        <p>Встроенные шкафы-купе и гардеробные комнаты. Системы хранения под любое пространство.</p>
+      </div>
+      <div class="type-card type-card--cta reveal">
+        <h3>Нет вашего варианта?</h3>
+        <p>Мы беремся за нестандартные проекты — опишите задачу на встрече.</p>
+        <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Как мы работаем</h2>
+      <p>Простой и понятный процесс — от идеи до готовой мебели у вас дома</p>
+    </div>
+    <div class="how__steps">
+      <div class="how__step reveal">
+        <div class="how__num">01</div>
+        <div class="how__body">
+          <h3>Встреча в офисе</h3>
+          <p>Вы приезжаете к нам в шоурум — смотрите образцы материалов, фасадов, фурнитуры. Консультант выясняет ваши задачи и пожелания. Встреча бесплатная и ни к чему не обязывает.</p>
+        </div>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">02</div>
+        <div class="how__body">
+          <h3>Дизайн-проект и договор</h3>
+          <p>После встречи мы готовим дизайн-проект с расчётом стоимости. Когда вас всё устраивает — подписываем предварительный договор. Это фиксирует цену и сроки.</p>
+        </div>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">03</div>
+        <div class="how__body">
+          <h3>Выезд замерщика</h3>
+          <p>После подписания договора к вам выезжает замерщик — снимает точные размеры помещения. Выезжаем по Новосибирску и в радиусе 500 км.</p>
+        </div>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">04</div>
+        <div class="how__body">
+          <h3>Производство</h3>
+          <p>Изготавливаем мебель на собственном производстве в Новосибирске. Контролируем качество на каждом этапе.</p>
+        </div>
+      </div>
+      <div class="how__step reveal">
+        <div class="how__num">05</div>
+        <div class="how__body">
+          <h3>Доставка и монтаж</h3>
+          <p>Привозим и собираем мебель силами наших монтажников. Проверяем вместе с вами, устраняем любые замечания. Гарантия на всё.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Почему выбирают нас</h2>
+    </div>
+    <div class="why__grid">
+      <div class="why__card reveal">
+        <div class="why__icon">🏭</div>
+        <h3>Собственное производство</h3>
+        <p>Мы сами производим мебель — без посредников. Это значит честная цена и полный контроль качества.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon">📐</div>
+        <h3>Точный замер и дизайн</h3>
+        <p>Замеры берём после подписания договора — это гарантирует точность. Дизайн-проект в подарок.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon">🏗️</div>
+        <h3>Эксперты по новостройкам</h3>
+        <p>Знаем все особенности черновых отделок новостроек Новосибирска. Работаем с Околица, Тайгинский парк, Дежнев, Расцветай и другими ЖК.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon">🌍</div>
+        <h3>Работаем по всей России</h3>
+        <p>Выезд замерщика в радиусе 500 км. Мебель без замера — по всей России и СНГ по вашим чертежам.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon">🔒</div>
+        <h3>Фиксированная цена</h3>
+        <p>Цена прописана в договоре и не меняется. Никаких сюрпризов по итогу.</p>
+      </div>
+      <div class="why__card reveal">
+        <div class="why__icon">🛠️</div>
+        <h3>Монтаж и гарантия</h3>
+        <p>Наши мастера собирают мебель сами. Даём гарантию и приедем, если что-то пойдёт не так.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWBUILDINGS -->
+<section class="nb">
+  <div class="container">
+    <div class="nb__inner reveal">
+      <div class="nb__text">
+        <h2>Только въехали в новостройку?</h2>
+        <p>Мы знаем, как правильно сделать мебель в новом жилье — учитываем усадку дома, черновые полы, нестандартные потолки. Работаем с жилыми комплексами по всему Новосибирску.</p>
+        <div class="nb__list">
+          <span>Околица</span><span>Тайгинский парк</span><span>Дежнев</span><span>Цивилизация</span><span>Огни Сибири</span><span>Авиатор</span><span>Нормандия Неман</span><span>Расцветай</span><span>Оскар</span><span>Нобель</span><span>Беринг</span><span>Марсель 2</span>
+        </div>
+        <a href="#contact" class="btn btn--primary">Записаться на консультацию</a>
+      </div>
+      <div class="nb__badge">
+        <div class="nb__badge-num">500 км</div>
+        <div class="nb__badge-text">радиус выезда<br>замерщика</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item reveal">
+        <details>
+          <summary>Почему замерщик приезжает только после договора?</summary>
+          <p>Это защита для обеих сторон. Мы фиксируем в договоре цену и сроки — и только потом выезжаем на замер. Так вы точно знаете финальную стоимость, а мы уверены в серьёзности намерений. На первой встрече мы готовим предварительный проект с расчётом по вашим данным.</p>
+        </details>
+      </div>
+      <div class="faq__item reveal">
+        <details>
+          <summary>Сколько стоит мебель под заказ?</summary>
+          <p>Средний проект — кухня с гарнитуром, прихожая или гостиная — обходится от 150 000 до 500 000 рублей. Итоговая цена зависит от размеров, материалов и сложности. Точный расчёт делаем на встрече бесплатно.</p>
+        </details>
+      </div>
+      <div class="faq__item reveal">
+        <details>
+          <summary>Сколько времени займёт изготовление?</summary>
+          <p>Обычно от 4 до 8 недель с момента подписания договора и проведения замера. Точный срок фиксируем в договоре.</p>
+        </details>
+      </div>
+      <div class="faq__item reveal">
+        <details>
+          <summary>Работаете ли вы с другими городами?</summary>
+          <p>Да. Выезд замерщика — по Новосибирску и в радиусе 500 км. Если вы дальше — работаем по вашим чертежам, по всей России и СНГ.</p>
+        </details>
+      </div>
+      <div class="faq__item reveal">
+        <details>
+          <summary>Есть ли у вас шоурум, где можно посмотреть образцы?</summary>
+          <p>Да, у нас есть офис в Новосибирске, где можно увидеть образцы материалов, фасадов и фурнитуры вживую. Адрес уточняйте при записи на встречу.</p>
+        </details>
+      </div>
+      <div class="faq__item reveal">
+        <details>
+          <summary>Работаете ли вы с юридическими лицами?</summary>
+          <p>Да, мы принимаем корпоративные заказы — офисная мебель, переговорные зоны, ресепшн. Работаем по официальным договорам, выставляем все необходимые документы.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__info reveal">
+        <h2>Запишитесь на встречу</h2>
+        <p>Приезжайте в наш офис — покажем образцы, ответим на все вопросы и сделаем предварительный расчёт. Встреча бесплатная.</p>
+        <div class="contact__items">
+          <div class="contact__item">
+            <div class="contact__item-icon">📞</div>
+            <div>
+              <div class="contact__item-label">Телефон</div>
+              <a href="tel:+73833000000" class="contact__item-val">Уточните в VK</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">💬</div>
+            <div>
+              <div class="contact__item-label">Сообщество ВКонтакте</div>
+              <a href="https://vk.com/fenixmebel54" target="_blank" rel="noopener" class="contact__item-val">vk.com/fenixmebel54</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">🌐</div>
+            <div>
+              <div class="contact__item-label">Сайт</div>
+              <a href="https://feniks-kuhni-nsk.ru/" target="_blank" rel="noopener" class="contact__item-val">feniks-kuhni-nsk.ru</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">📍</div>
+            <div>
+              <div class="contact__item-label">Город</div>
+              <div class="contact__item-val">Новосибирск</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form-wrap reveal">
+        <form class="contact__form" id="leadForm" novalidate>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <h3>Оставить заявку</h3>
+          <p class="form__hint">Заполните форму — мы перезвоним и согласуем удобное время для встречи</p>
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+          </div>
+          <div class="form__group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form__group">
+            <label for="furniture">Что интересует?</label>
+            <select id="furniture" name="furniture">
+              <option value="">Выберите тип мебели</option>
+              <option>Кухня</option>
+              <option>Гостиная / стенка</option>
+              <option>Прихожая / шкаф-купе</option>
+              <option>Детская</option>
+              <option>Ванная / туалет</option>
+              <option>Офисная мебель</option>
+              <option>Несколько комнат</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Комментарий (необязательно)</label>
+            <textarea id="message" name="message" rows="3" placeholder="Площадь, пожелания по материалам или другие детали..."></textarea>
+          </div>
+          <label class="form__consent">
+            <input type="checkbox" name="consent" required>
+            <span>Я соглашаюсь с <a href="privacy-policy.html" target="_blank">политикой конфиденциальности</a></span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Записаться на встречу</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">
+      <img src="logo.jpg" alt="Феникс" class="footer__logo-img">
+    </div>
+    <div class="footer__info">
+      <p>ООО «ТПК Феникс» · Новосибирск</p>
+      <p>Корпусная мебель под заказ</p>
+      <p class="footer__links">
+        <a href="https://vk.com/fenixmebel54" target="_blank" rel="noopener">ВКонтакте</a>
+        <a href="https://feniks-kuhni-nsk.ru/" target="_blank" rel="noopener">Основной сайт</a>
+        <a href="privacy-policy.html">Политика конфиденциальности</a>
+      </p>
+    </div>
+    <div class="footer__copy">
+      <p>&copy; <span id="year"></span> Феникс. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
