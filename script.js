@@ -34,15 +34,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('leadForm');
   form?.addEventListener('submit', async e => {
     e.preventDefault();
+
+    const formData = new FormData(form);
+
+    // honeypot
+    if (formData.get('_gotcha')) return;
+
+    const name = (formData.get('name') || '').trim();
+    const phone = (formData.get('phone') || '').trim();
+    const consent = formData.get('consent');
+
+    if (!name) { alert('Пожалуйста, укажите ваше имя'); form.querySelector('[name=name]').focus(); return; }
+    if (!phone || phone.replace(/\D/g, '').length < 11) { alert('Пожалуйста, введите корректный номер телефона'); form.querySelector('[name=phone]').focus(); return; }
+    if (!consent) { alert('Пожалуйста, подтвердите согласие с политикой конфиденциальности'); return; }
+
     const btn = form.querySelector('[type=submit]');
     const orig = btn.textContent;
     btn.textContent = 'Отправляю...';
     btn.disabled = true;
 
-    const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     delete data._gotcha;
-    if (formData.get('_gotcha')) return;
+    delete data.consent;
 
     try {
       const res = await fetch(LEAD_ENDPOINT, {
@@ -52,11 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if (res.ok) {
         form.innerHTML = '<div class="form__success"><div class="form__success-icon">✓</div><h3>Заявка отправлена!</h3><p>Мы свяжемся с вами в ближайшее время и согласуем удобное время для встречи.</p></div>';
-      } else throw new Error();
-    } catch {
+      } else {
+        throw new Error('HTTP ' + res.status);
+      }
+    } catch (err) {
+      console.error('Form submit error:', err);
       btn.textContent = orig;
       btn.disabled = false;
-      alert('Ошибка отправки. Пожалуйста, напишите нам в ВКонтакте: vk.com/fenixmebel54');
+      alert('Не удалось отправить заявку. Напишите нам напрямую в ВКонтакте: vk.com/fenixmebel54 — ответим быстро.');
     }
   });
 });
